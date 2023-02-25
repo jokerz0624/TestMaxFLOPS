@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cmake .. \
+-G Xcode \
+-DCMAKE_TOOLCHAIN_FILE=../ios.toolchain.cmake \
+-DDEPLOYMENT_TARGET=11.0 \
+-DENABLE_BITCODE=OFF \
+-DPLATFORM=OS \
+-DARCHS=arm64
+#-DPLATFORM=SIMULATOR
+#-DARCHS=x86_64
